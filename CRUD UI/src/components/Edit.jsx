@@ -30,7 +30,7 @@ const Edit = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios     
-      .post("http://localhost:9090/jobPosts",form)
+      .post("http://localhost:9090/jobPost",form)
       .then((resp) => {
         console.log(resp.data);
       })
